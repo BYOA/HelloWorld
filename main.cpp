@@ -1,25 +1,26 @@
 #include <iostream>
 
-string DisplayUserInput (string word);
+std::string DisplayUserInput (std::string word);
 
 int main ()
 {
-  string sentence = "Test";
-  
-  DisplayUserInput (sentence);
-  
-  std:cout << "Hello world!\n" << sentence;
-  cin.ignore();
-  
+  std::string sentence = "Test";
+
+  sentence = DisplayUserInput (sentence);
+
+  std::cout << "Hello world!\ " << sentence;
+  std::cin.ignore();
+
   return 0;
 }
 
-string DisplayUserInput (string word)
+std::string DisplayUserInput (std::string word)
 {
   using namespace std;
-  
+
   cout << "Enter a sentence and press enter to continue.\n";
-  cin >> word;
+  getline(cin, word); // gets multiple words instead of one word. I.e accounts for space.
   return word;
 
 }
+
