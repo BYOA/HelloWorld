@@ -1,12 +1,12 @@
 #include <iostream>
 
-string Display (string word);
+string DisplayUserInput (string word);
 
 int main ()
 {
   string sentence = "Test";
   
-  Display (sentence);
+  DisplayUserInput (sentence);
   
   std:cout << "Hello world!\n" << sentence;
   cin.ignore();
@@ -14,7 +14,7 @@ int main ()
 
 }
 
-string Display (string word)
+string DisplayUserInput (string word)
 {
   using namespace std;
   
