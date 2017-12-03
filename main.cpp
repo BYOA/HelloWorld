@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 std::string DisplayUserInput (std::string word);
 
 int main ()
