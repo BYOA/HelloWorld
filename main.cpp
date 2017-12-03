@@ -11,7 +11,7 @@ int main ()
   std:cout << "Hello world!\n" << sentence;
   cin.ignore();
   
-
+  return 0;
 }
 
 string DisplayUserInput (string word)
